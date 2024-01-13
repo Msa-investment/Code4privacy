@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .debug {
+            border: 1px solid red;
+        }
+
+        .c {
+            fill: none;
+            stroke: #BBDEFB;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .d {
+            fill: #424242;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-[#f6f8fa] p-4 min-h-screen flex justify-center items-center">
+        <div class="bg-gray-800 rounded-2xl shadow-lg overflow-hidden w-[320px] ">
+            <div class="bg-gray-800 p-6 text-white ">
+                <div class="flex justify-between items-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-white">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg>
+                    <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full"></span>
+                </div>
+                <h1 class="text-2xl font-bold mt-4 ">Hello, MSA</h1>
+                <div class="mt-4">
+                    <p class="font-semibold text-sm">Storage</p>
+                    <p class="text-xs">51 of 65 GB used</p>
+                    <div aria-valuemax="100" aria-valuemin="0" role="progressbar" data-state="indeterminate"
+                        data-max="100" class="relative overflow-hidden w-full bg-blue-100 h-1 rounded-full mt-2">
+                        <div data-state="indeterminate" data-max="100"
+                            class="h-full w-full flex-1 bg-blue-700 transition-all"
+                            style="transform: translateX(-49%);">
+                        </div>
+                    </div><a class="text-sm mt-2 block semi" href="#">Upgrade</a>
+                </div>
+            </div>
+            <div class="p-6 bg-blue-100 rounded-2xl relative ">
+                <div class="flex justify-between items-center ">
+                    <h2 class="text-xl font-semibold">My Files</h2><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="text-black">
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="5" r="1"></circle>
+                        <circle cx="12" cy="19" r="1"></circle>
+                    </svg>
+                </div>
+                <div class="mt-4 ">
+                    <div class="flex items-center p-4 bg-white rounded-md shadow-sm border border-gray-200 mt-2"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-[#fbbc05] mr-3">
+                            <path
+                                d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z">
+                            </path>
+                        </svg>
+                        <div>
+                            <p class="font-semibold text-sm">Folders</p>
+                            <p class="text-xs text-gray-500">today</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-white rounded-md shadow-sm border border-gray-200 mt-2"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-[#34a853] mr-3">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" x2="8" y1="13" y2="13"></line>
+                            <line x1="16" x2="8" y1="17" y2="17"></line>
+                            <line x1="10" x2="8" y1="9" y2="9"></line>
+                        </svg>
+                        <div>
+                            <p class="font-semibold text-sm">Documents</p>
+                            <p class="text-xs text-gray-500">yesterday</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-white rounded-md shadow-sm  border-gray-800 mt-2"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="text-[#ea4335] mr-3">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                        <div>
+                            <p class="font-semibold text-sm">Images</p>
+                            <p class="text-xs text-gray-500">yesterday</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cursor-pointer absolute bottom-10 right-2">
+                    <div>
+
+                        <div>
+                            <label for="tw-modal" class="cursor-pointer rounded  px-4 py-4 text-white">
+                                <svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+                                    <defs>
+
+                                    </defs>
+
+                                    <g id="a" />
+
+                                    <g id="b">
+
+                                        <circle class="d" cx="12" cy="12" r="10.5" />
+
+                                        <line class="c" x1="4.5" x2="19.5" y1="12" y2="12" />
+
+                                        <line class="c" x1="12" x2="12" y1="4.5" y2="19.5" />
+
+
+                                    </g>
+
+                                </svg></label>
+                        </div>
+                        <!-- hidden toggle -->
+                        <input type="checkbox" id="tw-modal" class="peer fixed appearance-none opacity-0">
+                        <!-- model -->
+                        <label for="tw-modal" class="pointer-events-none invisble fixed inset-0 flex cursor-pointer items-center justify-center overflow-hidden overscroll-contain bg-slate-700/30 
+                    opacity-0 transition-all duration-200 ease-in-out peer-checked:opacity-100 d ">
+                            <!-- modal box -->
+                            <label class="max-h-[calc(100vh-5em)] h-fit overflow-y-auto
+                        overscroll-contain rounded-md bg-white text-black shadow-2xl
+                        transition" for="">
+                                <div
+                                    class="w-[200px] rounded-md border border-gray-200 bg-white shadow-sm  m-10 justify-center">
+                                    <ul class="flex flex-col">
+                                        <a href="#">
+                                            <li
+                                                class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="mr-2 h-5 w-5 text-gray-400">
+                                                    <path
+                                                        d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z">
+                                                    </path>
+                                                </svg>
+                                                New folder
+                                            </li>
+                                        </a>
+                                        <a href="#">
+                                            <li
+                                                class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="mr-2 h-5 w-5 text-gray-400">
+                                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                                    <polyline points="17 8 12 3 7 8"></polyline>
+                                                    <line x1="12" x2="12" y1="3" y2="15"></line>
+                                                </svg>
+                                                File upload
+                                            </li>
+                                        </a>
+                                        <a href="#">
+                                            <li
+                                                class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="mr-2 h-5 w-5 text-gray-400">
+                                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                                    <polyline points="17 8 12 3 7 8"></polyline>
+                                                    <line x1="12" x2="12" y1="3" y2="15"></line>
+                                                </svg>
+                                                Folder upload
+                                            </li>
+                                        </a>
+                                        <a href="#">
+                                            <li
+                                                class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="mr-2 h-5 w-5 text-blue-500">
+                                                    <path
+                                                        d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48">
+                                                    </path>
+                                                </svg>
+                                                Google Docs
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="ml-auto h-4 w-4 text-gray-400">
+                                                    <path d="m9 18 6-6-6-6"></path>
+                                                </svg>
+                                            </li>
+                                        </a>
+                                        <a href="#">
+                                            <li
+                                                class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="mr-2 h-5 w-5 text-green-500">
+                                                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2">
+                                                    </rect>
+                                                    <line x1="3" x2="21" y1="9" y2="9"></line>
+                                                    <line x1="3" x2="21" y1="15" y2="15"></line>
+                                                    <line x1="9" x2="9" y1="9" y2="21"></line>
+                                                    <line x1="15" x2="15" y1="9" y2="21"></line>
+                                                </svg>
+                                                Google Sheets
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="ml-auto h-4 w-4 text-gray-400">
+                                                    <path d="m9 18 6-6-6-6"></path>
+                                                </svg>
+                                            </li>
+                                        </a>
+                                        <a href="#">
+                                            <li
+                                                class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="mr-2 h-5 w-5 text-yellow-500">
+                                                    <path d="M2 3h20"></path>
+                                                    <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"></path>
+                                                    <path d="m7 21 5-5 5 5"></path>
+                                                </svg>
+                                                Google Slides
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="ml-auto h-4 w-4 text-gray-400">
+                                                    <path d="m9 18 6-6-6-6"></path>
+                                                </svg>
+                                            </li>
+                                        </a>
+                                        <a href="#">
+                                            <li
+                                                class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="mr-2 h-5 w-5 text-green-500">
+                                                    <rect width="20" height="12" x="2" y="6" rx="2"></rect>
+                                                    <path d="M12 12h.01"></path>
+                                                    <path d="M17 12h.01"></path>
+                                                    <path d="M7 12h.01"></path>
+                                                </svg>
+                                                Google Forms
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="ml-auto h-4 w-4 text-gray-400">
+                                                    <path d="m9 18 6-6-6-6"></path>
+                                                </svg>
+                                            </li>
+                                        </a>
+                                        <a href="#">
+                                            <li
+                                                class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100">
+                                                More
+                                            </li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <!-- <h3 class="text-lg font-bold ">modal open</h3>
+                            <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatum similique est omnis esse, quam quod illum, ab doloribus, alias cum rem laborum vel? Quam eum saepe eveniet consequuntur fuga.</p> -->
+                            </label>
+                        </label>
+
+
+                    </div>
+                    <!-- <label for="tw-modal">
+                        <svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+                            <defs>
+
+                            </defs>
+
+                            <g id="a" />
+
+                            <g id="b">
+
+                                <circle class="d" cx="12" cy="12" r="10.5" />
+
+                                <line class="c" x1="4.5" x2="19.5" y1="12" y2="12" />
+
+                                <line class="c" x1="12" x2="12" y1="4.5" y2="19.5" />
+
+
+                            </g>
+
+                        </svg>
+                    </label> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
